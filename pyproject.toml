@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rgpio-sht4x"
+version = "0.0.1"
+authors = [
+  { name="", email="email@example.com" },
+]
+description = "Basic SHT4x implementation using the rgpio backend"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "rgpio",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Clam-/rgpio-sht4x"
+"Bug Tracker" = "https://github.com/Clam-/rgpio-sht4x/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
